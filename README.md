@@ -2,7 +2,13 @@
 
 this project was developed during Web Dev Bootcamp.
 
-features:
+### Tech:
+- ReactJS
+- NodeJS
+- Tailwind CSS
+- MongoDB
+
+### Features:
 - login / logout
 - movie suggestion (home)
 - search a movie
