@@ -5,6 +5,7 @@ function App() {
   return (
     <div className="App">
       Movie Mania
+      This code is added by shlok
     </div>
   );
 }
