@@ -1,0 +1,54 @@
+.hero {
+    z-index: 10;
+    position: relative;
+    height: 65vh;
+    max-height: 68vh;
+    display: flex;
+    /* border: 1px solid red; */
+    align-items: flex-end;
+    padding: 40px 30px 50px;
+
+}
+
+.title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.more-info {
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+.star {color: #f09116; margin-right: 8px;}
+.rating, .genres {margin-right: 30px;}
+.summary {
+    padding: 16px 0;
+    font-size: 14px;
+    opacity: 0.85;
+    width: 80%;
+}
+.hero-button {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 30px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+}
+.mr {
+    margin-right: 4px;
+}
+.favourite {
+    background-color: #ffffff00;
+    border: 1px solid #d4d4d4;
+    color: #d4d4d4;
+}
+.favourite:hover {
+    background-color: #d4d4d43b;
+}
