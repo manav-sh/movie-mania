@@ -17,7 +17,7 @@ body {
   background-size: cover;
 }
 .gradient {
-  background-image: linear-gradient(to top, #111111f3 30%, #11111105);
+  background-image: linear-gradient(to top, #111111f8 30%, #111111a1 , #11111100);
 }
 
 .moviesList {

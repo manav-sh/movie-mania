@@ -2,13 +2,22 @@ import React from 'react'
 import '../styles/infoscreen.css'
 
 export const InfoScreen = () => {
-  return (
-    <div className='info'>
-            <div className="fullscreen info-bg" style={{backgroundImage: 'url("https://images3.alphacoders.com/103/thumb-1920-1033561.jpg")'}}>
+    return (
+        <div className='info'>
+            <div className="image-info">
+                {/* <img className='info-poster' src='https://images3.alphacoders.com/103/thumb-1920-1033561.jpg' alt="poster" width={'100%'} height={'100%'} /> */}
+                    <iframe class="info-poster" wmode="transparent" src="https://www.youtube-nocookie.com/embed/pU8-7BX9uxs?loop=1&autoplay=1&autopause=0&mute=1&modestbranding=1&autohide=1&rel=0&controls=0&playlist=pU8-7BX9uxs" title="YouTube video player" frameborder="0" loop="1" id="vid" allowFullScreen></iframe>
+                <div className="fullscreen l-to-r-gradient"></div>
             </div>
-            <div className="fullscreen l-to-r-gradient"></div>
             <div className="detailed-info">
                 <h2 className="info-title">John Wick - Chapter 3 <span className='info-year'>(2020)</span></h2>
+                <div className="info-buttons">
+                    <div className="info-btn watchlist"> <i className='fa fa-play' aria-hidden="true"></i> Watchlist</div>
+                    <div className="info-btn fav"> <i className='fa fa-heart-o' aria-hidden="true"></i> Favourite</div>
+                </div>
+                <div className="info-summary font-dm">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta nihil voluptate deleniti in eos nesciunt at optio id mollitia ducimus molestiae fugit iure delectus quae accusamus quas similique, modi iste perspiciatis ut corporis libero hic. Ad laboriosam beatae eius possimus.
+                </div>
                 <div className="more-info-container">
                     <div className="imdb">IMDB 9.0 <i className='fa fa-star'></i> </div>
                     <div className="small-field">
@@ -17,9 +26,6 @@ export const InfoScreen = () => {
                     <div className="small-field">
                         2hr 30mins
                     </div>
-                </div>
-                <div className="info-summary font-dm">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta nihil voluptate deleniti in eos nesciunt at optio id mollitia ducimus molestiae fugit iure delectus quae accusamus quas similique, modi iste perspiciatis ut corporis libero hic. Ad laboriosam beatae eius possimus.
                 </div>
                 <div className="crew-details font-dm">
                     <div className="directors">
@@ -32,22 +38,15 @@ export const InfoScreen = () => {
                 <div className="cast-details">
                     <h4 className="cast-title">Cast</h4>
                     <div className="cast-list">
-                        <div className='individual-cast'>
+                        {[1, 2, 3, 4, 5].map((key, index) => <div className='individual-cast'>
                             <img className='cast-image' src="https://m.media-amazon.com/images/M/MV5BNGJmMWEzOGQtMWZkNS00MGNiLTk5NGEtYzg1YzAyZTgzZTZmXkEyXkFqcGdeQXVyMTE1MTYxNDAw._V1_Ratio0.7273_AL_.jpg" alt="actor" />
                             <span className='cast-name'>Keanu Reeves</span>
-                        </div>
-                        <div className='individual-cast'>
-                            <img className='cast-image' src="https://m.media-amazon.com/images/M/MV5BNGJmMWEzOGQtMWZkNS00MGNiLTk5NGEtYzg1YzAyZTgzZTZmXkEyXkFqcGdeQXVyMTE1MTYxNDAw._V1_Ratio0.7273_AL_.jpg" alt="actor" />
-                            <span className='cast-name'>Keanu Reeves</span>
-                        </div>
-                        <div className='individual-cast'>
-                            <img className='cast-image' src="https://m.media-amazon.com/images/M/MV5BNGJmMWEzOGQtMWZkNS00MGNiLTk5NGEtYzg1YzAyZTgzZTZmXkEyXkFqcGdeQXVyMTE1MTYxNDAw._V1_Ratio0.7273_AL_.jpg" alt="actor" />
-                            <span className='cast-name'>Keanu Reeves</span>
-                        </div>
+                        </div>)}
+
                     </div>
                 </div>
 
             </div>
-    </div>
-  )
+        </div>
+    )
 }

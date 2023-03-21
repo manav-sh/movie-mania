@@ -1,5 +1,6 @@
 .navbar {
-    position: relative;
+    position: absolute;
+    top: 0; left: 0; right: 0;
     background-color: #2c2c2c23;
     backdrop-filter: blur(8px);
     z-index: 20;
@@ -27,15 +28,9 @@
 }
 .left-container * {
     display: inline-block;
-
 }
 .links {
     margin-left: 40px;
     display: flex;
     gap: 20px;
-}
-.links li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 30px 0 0;
 }

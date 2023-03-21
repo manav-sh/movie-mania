@@ -1,5 +1,4 @@
 import React from 'react'
-import './styles/hero.css'
 
 export const Hero = ({data}) => {
   return (

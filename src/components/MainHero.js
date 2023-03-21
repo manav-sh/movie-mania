@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Hero } from './Hero'
+import './styles/hero.css'
 
 const movieData = [
     {
@@ -8,7 +9,7 @@ const movieData = [
         rating: 5,
         genre: 'Sci-fi, Adventure',
         year: 2022,
-        summary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dicta incidunt perspiciatis porro nostrum. Modi, reiciendis voluptatibus? Corporis, praesentium culpa. Consequatur officiis quibusdam non sapiente.',
+        summary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dicta incidunt perspiciatis porro nostrum. Modi, reiciendis voluptatibus? Corporis, praesentium culpa. Consequatur officiis quibusdam non sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dicta incidunt perspiciatis porro nostrum. Modi, reiciendis voluptatibus? Corporis, praesentium culpa. Consequatur officiis quibusdam non sapiente.',
     },
     {
         name: 'John Wick - Chapter 3',
@@ -46,9 +47,11 @@ export const MainHero = () => {
     }, 5000);
 
     return (
-        <div>
-            <div className="fullscreen poster" style={{ backgroundImage: `url(${movieData[index].poster})` }}></div>
-            <div className="fullscreen gradient"></div>
+        <div className='hero-slider'>
+            <div className="hero-slider-img">
+                <div className="fullscreen poster" style={{ backgroundImage: `url(${movieData[index].poster})` }}></div>
+                <div className="fullscreen gradient"></div>
+            </div>
             <Hero data={movieData[index]} />
         </div>
     )
