@@ -39,8 +39,8 @@ export const InfoScreen = () => {
                     <h4 className="cast-title">Cast</h4>
                     <div className="cast-list">
                         {[1, 2, 3, 4, 5].map((key, index) => <div className='individual-cast'>
-                            <img className='cast-image' src="https://m.media-amazon.com/images/M/MV5BNGJmMWEzOGQtMWZkNS00MGNiLTk5NGEtYzg1YzAyZTgzZTZmXkEyXkFqcGdeQXVyMTE1MTYxNDAw._V1_Ratio0.7273_AL_.jpg" alt="actor" />
-                            <span className='cast-name'>Keanu Reeves</span>
+                            <div className='fullscreen cast-image' style={{backgroundImage: 'url("https://m.media-amazon.com/images/M/MV5BNGJmMWEzOGQtMWZkNS00MGNiLTk5NGEtYzg1YzAyZTgzZTZmXkEyXkFqcGdeQXVyMTE1MTYxNDAw._V1_Ratio0.7273_AL_.jpg")'}} alt="actor"></div>
+                            <span className='fullscreen cast-name hidden'>Keanu Reeves</span>
                         </div>)}
 
                     </div>

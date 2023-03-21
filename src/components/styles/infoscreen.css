@@ -20,12 +20,17 @@
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     width: 100%; height: 100%;
+    object-fit: cover;
     transform: scale(1.3);
-    /* object-fit: cover; */
 }
 .detailed-info {
+    min-height: 90vh;
     grid-column: 1/ -1;
     grid-row: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-start;
     /* min-height: 100vh; */
     position: relative;
     padding: 80px 40px 40px;
@@ -80,7 +85,7 @@
 .cast-title {
     margin: 0;
     margin-bottom: 10px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     font-family: 'Outfit', sans-serif;
 }
@@ -89,17 +94,36 @@
     gap: 20px;
 }
 .individual-cast {
-    max-width: 100px;
+    width: 100px;
+    height: 100px;
     display: flex;
-    gap: 10px;
+    gap: 15px;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}
+.individual-cast:hover .hidden {
+    display: flex;
 }
 .cast-image {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 25px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+.cast-name {
+    padding: 10px 8px;
+    background-image: linear-gradient(to top, #1d1d1d 20%, #1d1d1d00);
+    border-radius: 8px;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 14px;
+    transition-duration: 0.4s;
+}
+.hidden {
+    transition-duration: 0.4s;
+    display: none;
 }
 .info-buttons {
     display: flex; gap: 20px;
